@@ -6,14 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lagoona</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="container">
-            <a href="#" class="logo"><img src="img/logo.svg" alt="Lagoona" class="logo-img"></a>
-            <a href="tel:+74953225448" class="tel">+7 495 322 54 48</a>
-            <a href="#" class="profile">Личный кабинет</a>
+        <div class="container header-cont">
+            <div class="links">
+                <a href="#" class="logo"><img src="img/logo.svg" alt="Lagoona" class="logo-img"></a>
+                <a href="tel:+74953225448" class="tel">+7 495 322 54 48</a>
+                <a href="#" class="profile">Личный кабинет</a>
+            </div>
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item">
@@ -21,7 +30,6 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Преимущества</a>
-
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Услуги</a>
@@ -36,100 +44,112 @@
                         <a href="#" class="nav-link">Контакты</a>
                     </li>
                 </ul>
-                <button class="tour">Хочу тур</button>
-                <button class="call-me">Обратный звонок</button>
+                <div class="buttons">
+                    <button class="btn tour">Хочу тур</button>
+                    <button class="btn call-me">Обратный звонок</button>
+                </div>
             </nav>
         </div>
     </header>
     <main class="main">
         <div class="container">
-            <h1>Спецпредложения</h1>
-            <ul class="specials-list">
-                <li class="specials-item">
-                    <h3 class="specials">Мальдивские острова</h3>
-                    <p class="price">от 55 000 р</p>
-                    <a href="#" class="specials-more">Подробнее</a>
-                </li>
-                <li class="specials-item">
-                    <h3 class="specials">Горящий тур на остров Крит</h3>
-                    <p class="price">от 30 000 р</p>
-                    <a href="#" class="specials-more">Подробнее</a>
-                </li>
-            </ul>
-            <div class="suites">
-                <h2 class="specials">Номера категории люкс</h2>
-                <p class="price">от 5 000 р</p>
-                <a href="#" class="specials-more">Подробнее</a>
-            </div>
+            <section>
+                <h1>Спецпредложения</h1>
+                <div class="specials">
+                    <ul class="specials-list">
+                        <li class="specials-item">
+                            <h3 class="specials-title">Мальдивские <br>острова</h3>
+                            <p class="specials-price">от 55 000 р</p>
+                            <a href="#" class="specials-more">Подробнее</a>
+                        </li>
+                        <li class="specials-item">
+                            <h3 class="specials-title">Горящий тур <br>на остров Крит</h3>
+                            <p class="specials-price">от 30 000 р</p>
+                            <a href="#" class="specials-more">Подробнее</a>
+                        </li>
+                    </ul>
+                    <div class="suites">
+                        <h2 class="suites-title">Номера <br>категории <br>люкс</h2>
+                        <p class="suites-price">от 5 000 р</p>
+                        <a href="#" class="specials-more">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h1>О нас</h1>
+                <p>Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой
+                    процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+                    Идейные
+                    соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет
+                    собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям.
+                    Равным
+                    образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и
+                    административных условий.</p>
+            </section>
+            <section>
+                <h1>Услуги</h1>
+                <ul class="services-list">
+                    <li class="services-item">
+                        <a href="#" class="services-link">Эксклюзивное обслуживание</a>
+                        <p class="services-description">Равным образом постоянный количественный рост и сфера нашей
+                            активности</p>
 
-            <h1>О нас</h1>
-            <p>Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс
-                внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные
-                соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой
-                интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным
-                образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и
-                административных условий.</p>
+                    </li>
+                    <li class="services-item right">
+                        <a href="#" class="services-link">Аренда банкетных залов</a>
+                        <p class="services-description">Значимость этих проблем настолько очевидна, что дальнейшее
+                            развитие различных форм.</p>
 
-            <h1>Услуги</h1>
-            <ul class="services-list">
-                <li class="services-item">
-                    <a href="#" class="services-inblock-link">Эксклюзивное обслуживание</a>
-                    <p>Равным образом постоянный количественный рост и сфера нашей активности</p>
-
-                </li>
-                <li class="services-item right">
-                    <a href="#" class="services-inblock-link">Аренда банкетных залов</a>
-                    <p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм.</p>
-
-                </li>
-                <li class="services-item">
-                    <a href="#" class="services-inblock-link">Сауны, бассейны, бани, фитнес-залы</a>
-                    <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
-
-                </li>
-                <li class="services-item right">
-                    <a href="#" class="services-inblock-link">Аренда банкетных залов</a>
-                    <p>Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
-
-                </li>
-            </ul>
-            
-            <h1>Преимущества</h1>
-            <ul class="advantages-list">
-                <li class="advantages-item">
-                    <img src="img/bathtub.svg" alt="bathtub-icon" class="advantages-icon">
-                    <p>Идейные соображения высшего порядка, а также постоянный количественный рост</p>
-                </li>
-                <li class="advantages-item">
-                    <img src="img/hanger.svg" alt="hanger-icon" class="advantages-icon">
-                    <p>Идейные соображения высшего порядка, а также постоянный количественный рост</p>
-                </li>
-
-                <li class="advantages-item">
-                    <img src="img/heating.svg" alt="heating-icon" class="advantages-icon">
-                    <p>Таким образом реализация плановых заданий играет важную роль для понимания</p>
-                </li>
-                <li class="advantages-item">
-                    <img src="img/hotel-key.svg" alt="hotel-key-icon" class="advantages-icon">
-                    <p>Повседневная практика показывает, что сложившаяся структура организации</p>
-                </li>
-                <li class="advantages-item">
-                    <img src="img/parking-icon.svg" alt="parking-icon" class="advantages-icon">
-                    <p>Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
-                </li>
-                <li class="advantages-item">
-                    <img src="img/reception.svg" alt="reception-icon" class="advantages-icon">
-                    <p>Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
-                </li>
-                <li class="advantages-item">
-                    <img src="img/security-box.svg" alt="security-box-icon" class="advantages-icon">
-                    <p>Повседневная практика показывает, что дальнейшее развитие различных форм</p>
-                </li>
-                <li class="advantages-item">
-                    <img src="img/swimming-pool.svg" alt="swimming-pool-icon" class="advantages-icon">
-                    <p>Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
-                </li>
-            </ul>
+                    </li>
+                    <li class="services-item">
+                        <a href="#" class="services-link">Сауны, бассейны, бани, фитнес-залы</a>
+                        <p class="services-description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции</p>
+                    </li>
+                    <li class="services-item right">
+                        <a href="#" class="services-link">Охраняемые автомобильные стоянки</a>
+                        <p class="services-description">Не следует, однако забывать, что начало повседневной работы по
+                            формированию позиции</p>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h1>Преимущества</h1>
+                <ul class="advantages-list">
+                    <li class="advantages-item">
+                        <img src="img/bathtub.svg" alt="bathtub-icon" class="advantages-icon">
+                        <p>Идейные соображения высшего порядка, а также постоянный количественный рост</p>
+                    </li>
+                    <li class="advantages-item">
+                        <img src="img/hanger.svg" alt="hanger-icon" class="advantages-icon">
+                        <p>Идейные соображения высшего порядка, а также постоянный количественный рост</p>
+                    </li>
+                    <li class="advantages-item">
+                        <img src="img/heating.svg" alt="heating-icon" class="advantages-icon">
+                        <p>Таким образом реализация плановых заданий играет важную роль для понимания</p>
+                    </li>
+                    <li class="advantages-item">
+                        <img src="img/hotel-key.svg" alt="hotel-key-icon" class="advantages-icon">
+                        <p>Повседневная практика показывает, что сложившаяся структура организации</p>
+                    </li>
+                    <li class="advantages-item">
+                        <img src="img/parking-icon.svg" alt="parking-icon" class="advantages-icon">
+                        <p>Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
+                    </li>
+                    <li class="advantages-item">
+                        <img src="img/reception.svg" alt="reception-icon" class="advantages-icon">
+                        <p>Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
+                    </li>
+                    <li class="advantages-item">
+                        <img src="img/security-box.svg" alt="security-box-icon" class="advantages-icon">
+                        <p>Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+                    </li>
+                    <li class="advantages-item">
+                        <img src="img/swimming-pool.svg" alt="swimming-pool-icon" class="advantages-icon">
+                        <p>Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
+                    </li>
+                </ul>
+            </section>
         </div>
     </main>
 </body>
