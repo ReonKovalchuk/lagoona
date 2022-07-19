@@ -16,7 +16,7 @@ img {
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Muller', sans-serif;
     font-size: 16px;
 }
 
@@ -30,6 +30,20 @@ body {
     margin-left: auto;
 }
 
+h1 {
+    margin-left: 40px;
+    margin-bottom: 30px;
+    font-weight: normal;
+    padding: 0px;
+}
+
+section {
+    margin-top: 70px;
+}
+
+
+                                /* header */
+
 .links{
     display: flex;
     align-items: center;
@@ -41,8 +55,14 @@ body {
 }
 
 .profile {
+    color: #cc9933;
     margin-left: auto;
+    padding-left: 25px;
+    background-image: url(/img/keyboard_tab.svg);
+    background-repeat: no-repeat;
+    background-position: left;
 }
+
 
 .nav-list {
     display: flex;
@@ -71,6 +91,24 @@ body {
     
 }
 
+.nav-link, .tel {
+    color: #666666;
+    padding: 5px;
+}
+
+.nav-link:hover, .tel:hover{
+    color: #cc9933;
+}
+
+.nav-link:active,  .tel:active {
+ color: #a47312;
+}
+
+.nav-link:focus,  .tel:focus{
+    color: #cc9933;
+    border: 1px solid #cc9933
+}
+
 .btn {
     padding: 10px 13px;
     color: #cc9933;
@@ -85,6 +123,8 @@ body {
     margin-left: auto;
 }
 
+                                /* specials */
+
 .specials {
     display: flex;
     align-items: center;
@@ -93,7 +133,7 @@ body {
 
 .specials-item, .suites {
     width: 573px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: black;
     color: white;
     padding: 40px;
@@ -101,6 +141,8 @@ body {
 
 .specials-item{
     height: 258px;   
+    background-repeat: no-repeat;
+    background-size: 573px 258px;
 }
 
 .specials-list :not(:last-child) {
@@ -111,45 +153,56 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-items: flex-end;
+    justify-content: flex-end;
     height: 540px;
+    padding-top: 0px;
+
+    background-image: url(/img/lux\ suites.jpeg);
+    background-size: 573px 540px;
+    background-repeat: no-repeat;
 }
 
 .specials-title {
     margin-top: 0px;
     margin-bottom: 15px;
+    width: 60%;
     font-size: 40px;
     font-weight: bold;
 }
 
 .suites-title {
-    margin-top: 100px;
     margin-bottom: 15px;
+    width: 66%;
     font-size: 60px;
     font-weight: bold;
+    line-height: 1;
 }
 
 .specials-price {
     font-size: 20px;
-    margin-top: auto;
     margin-bottom: 47px;
 }
 
 .suites-price {
     font-size: 30px;
+    margin-top: 0;
     margin-bottom: 47px;
+    line-height: 1;
 }
 
-p {
-    text-align: justify;
+
+.maldives {
+    background-image: linear-gradient(to right, #30405984, transparent),
+                        url(/img/maldives.jpeg);
 }
 
-h1 {
-    margin-left: 40px;
+.crete {
+    background-image: linear-gradient(to right, #30405984, transparent),
+                        url(/img/Crete.jpeg);
 }
 
 .specials-more {
-    margin-top: auto;
+    /* margin-top: auto; */
     color: #cc9933;
     padding-right: 13px;
     background-image: url(/img/Rectangle\ 2.svg);
@@ -157,9 +210,21 @@ h1 {
     background-position: right;
 }
 
+.specials-more:active {
+    color: #ffffff;
+}
+
+                            /* about */
+
+.section-about {
+    max-width: 880px;
+}
+
+                            /* services */
+
 .services-link {
     color: #cc9933;
-    font-weight: bold;
+    /* font-weight: bolder; */
     font-size: 20px;
     line-height: 1.5em;
     padding-right: 13px;
@@ -171,10 +236,15 @@ h1 {
 .services-list {
     display: flex;
     flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.services-list :not(:nth-child(2n)) {
+    margin-right: 23px;
 }
 
 .services-item {
-    height: 330px;
+    min-height: 330px;
     width: 573px;
     padding: 180px 126px 50px 45px;
     padding-bottom: 50px;
@@ -188,21 +258,154 @@ h1 {
 
 }
 
-.right {
-    margin-left: auto;
-}
+                                /* advantages */
 
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
+}
+
+.advantages-list :not(:nth-child(4n)) {
+    margin-right: 23px;
 }
 
 .advantages-item {
-    height: 275px;
+    min-height: 275px;
     width: 275px;
     margin-bottom: 23px;
     padding: 45px 40px 42px 41px;
     background-color: #ffffff;
     border-radius: 15px;
+    
+}
+
+.advantages-icon {
+    max-width: 66px;
+}
+
+.advantages-text {
+    line-height: 1.7em;
+}
+
+                                /* accomodations */
+.accomodations-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+/* .accomodations-list :not(:nth-child(3n)) {
+    margin-right: 23px;
+} */
+
+.accomodations-item {
+    height: 440px;
+    width: 373px;
+    margin-bottom: 23px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.acc-block {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 46px 41px 45px;
+    justify-content: space-between;
+}
+
+.acc-image {
+    height: 217px;
+    width: 373px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.acc-main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.acc-price {
+    margin: 0px;
+}
+
+.acc-price-numbers {
+    font-size: 20px;
+}
+
+.acc-rating {
+	display: inline-block;
+    font-size: 0;
+}
+.rating-star {
+	font-size: 20px;
+	color: lightgrey;
+}
+.acc-rating > span:before {
+	content: '★';
+}
+.active {
+	color: #E9CE93;
+}
+
+.weak-text {
+    color: #999999;
+}
+
+.acc-place {
+    margin-top: 0px;
+}
+.acc-rooms {
+    align-self: flex-start;
+}
+
+.see-all {
+    order: 100;
+    background-image: url(/img/41.jpeg);
+    background-repeat: no-repeat;
+    display: flex;
+    align-content: flex-end;
+    padding-bottom: 27px;
+    padding-left: 54px;
+}
+
+.see-all-link {
+    color: #ffffff;
+    padding-right: 13px;
+    background-image: url(/img/Rectangle\ 2\ white.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+                                            /* fonts */
+@font-face {
+    font-family: Muller;
+    src: url(/fonts/MullerBold.woff) format("woff"),
+         url(/fonts/MullerBold.woff2) format("woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url(/fonts/MullerLight.woff) format("woff"),
+         url(/fonts/MullerLight.woff2) format("woff2");
+    font-weight: lighter;
+}
+@font-face {
+    font-family: Muller;
+    src: url(/fonts/MullerMedium.woff) format("woff"),
+         url(/fonts/MullerMedium.woff2) format("woff2");
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: Muller;
+    src: url(/fonts/MullerRegular.woff) format("woff"),
+         url(/fonts/MullerRegular.woff2) format("woff2");
+    font-weight: normal;
 }
