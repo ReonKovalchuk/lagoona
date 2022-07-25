@@ -58,7 +58,7 @@ section {
     color: #cc9933;
     margin-left: auto;
     padding-left: 25px;
-    background-image: url(/img/keyboard_tab.svg);
+    background-image: url(img/keyboard_tab.svg);
     background-repeat: no-repeat;
     background-position: left;
 }
@@ -157,7 +157,7 @@ section {
     height: 540px;
     padding-top: 0px;
 
-    background-image: url(/img/lux\ suites.jpeg);
+    background-image: url(img/lux\ suites.jpeg);
     background-size: 573px 540px;
     background-repeat: no-repeat;
 }
@@ -193,19 +193,19 @@ section {
 
 .maldives {
     background-image: linear-gradient(to right, #30405984, transparent),
-                        url(/img/maldives.jpeg);
+                        url(img/maldives.jpeg);
 }
 
 .crete {
     background-image: linear-gradient(to right, #30405984, transparent),
-                        url(/img/Crete.jpeg);
+                        url(img/Crete.jpeg);
 }
 
 .specials-more {
     /* margin-top: auto; */
     color: #cc9933;
     padding-right: 13px;
-    background-image: url(/img/Rectangle\ 2.svg);
+    background-image: url(img/Rectangle\ 2.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -228,7 +228,7 @@ section {
     font-size: 20px;
     line-height: 1.5em;
     padding-right: 13px;
-    background-image: url(/img/Rectangle\ 2.svg);
+    background-image: url(img/Rectangle\ 2.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
@@ -251,7 +251,7 @@ section {
     margin-bottom: 23px;
     background-color: #ffffff;
     border-radius: 15px;
-    background-image: url(/img/exclusive_treatment.jpeg);
+    background-image: url(img/exclusive_treatment.jpeg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 573px 165px;
@@ -294,10 +294,6 @@ section {
     flex-wrap: wrap; 
     justify-content: space-between; 
 }
-
-/* .accomodations-list :not(:nth-child(3n)) {
-    margin-right: 23px;
-} */
 
 .accomodations-item {
     height: 440px;
@@ -363,7 +359,7 @@ section {
 
 .see-all {
     order: 100;
-    background-image: url(/img/41.jpeg);
+    background-image: url(img/41.jpeg);
     background-repeat: no-repeat;
     display: flex;
     align-content: flex-end;
@@ -374,7 +370,7 @@ section {
 .see-all-link {
     color: #ffffff;
     padding-right: 13px;
-    background-image: url(/img/Rectangle\ 2\ white.svg);
+    background-image: url(img/Rectangle\ 2\ white.svg);
     background-repeat: no-repeat;
     background-position: right;
     margin-top: auto;
@@ -385,27 +381,27 @@ section {
                                             /* fonts */
 @font-face {
     font-family: Muller;
-    src: url(/fonts/MullerBold.woff) format("woff"),
-         url(/fonts/MullerBold.woff2) format("woff2");
+    src: url(fonts/MullerBold.woff) format("woff"),
+         url(fonts/MullerBold.woff2) format("woff2");
     font-weight: bold;
 }
 
 @font-face {
     font-family: Muller;
-    src: url(/fonts/MullerLight.woff) format("woff"),
-         url(/fonts/MullerLight.woff2) format("woff2");
+    src: url(fonts/MullerLight.woff) format("woff"),
+         url(fonts/MullerLight.woff2) format("woff2");
     font-weight: lighter;
 }
 @font-face {
     font-family: Muller;
-    src: url(/fonts/MullerMedium.woff) format("woff"),
-         url(/fonts/MullerMedium.woff2) format("woff2");
+    src: url(fonts/MullerMedium.woff) format("woff"),
+         url(fonts/MullerMedium.woff2) format("woff2");
     font-weight: bolder;
 }
 
 @font-face {
     font-family: Muller;
-    src: url(/fonts/MullerRegular.woff) format("woff"),
-         url(/fonts/MullerRegular.woff2) format("woff2");
+    src: url(fonts/MullerRegular.woff) format("woff"),
+         url(fonts/MullerRegular.woff2) format("woff2");
     font-weight: normal;
 }
