@@ -274,7 +274,7 @@ section {
     min-height: 275px;
     width: 275px;
     margin-bottom: 23px;
-    padding: 45px 40px 42px 41px;
+    padding: 40px;
     background-color: #ffffff;
     border-radius: 15px;
     
@@ -285,7 +285,9 @@ section {
 }
 
 .advantages-text {
+    margin: 0px !important;
     line-height: 1.7em;
+
 }
 
                                 /* accomodations */
@@ -381,8 +383,8 @@ section {
                                             /* fonts */
 @font-face {
     font-family: Muller;
-    src: url(fonts/MullerBold.woff) format("woff"),
-         url(fonts/MullerBold.woff2) format("woff2");
+    src: url(../fonts/MullerBold.woff) format("woff"),
+         url(../fonts/MullerBold.woff2) format("woff2");
     font-weight: bold;
 }
 
