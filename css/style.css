@@ -202,7 +202,6 @@ section {
 }
 
 .specials-more {
-    /* margin-top: auto; */
     color: #cc9933;
     padding-right: 13px;
     background-image: url(../img/Rectangle_2.svg);
@@ -224,7 +223,6 @@ section {
 
 .services-link {
     color: #cc9933;
-    /* font-weight: bolder; */
     font-size: 20px;
     line-height: 1.5em;
     padding-right: 13px;
@@ -236,19 +234,15 @@ section {
 .services-list {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    gap: 23px;
 }
 
-.services-list :not(:nth-child(2n)) {
-    margin-right: 23px;
-}
 
 .services-item {
     min-height: 330px;
     width: 573px;
     padding: 180px 126px 50px 45px;
     padding-bottom: 50px;
-    margin-bottom: 23px;
     background-color: #ffffff;
     border-radius: 15px;
     background-image: url(../img/exclusive_treatment.jpeg);
@@ -263,17 +257,12 @@ section {
 .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    
-}
-
-.advantages-list :not(:nth-child(4n)) {
-    margin-right: 23px;
+    gap: 23px;
 }
 
 .advantages-item {
     min-height: 275px;
     width: 275px;
-    margin-bottom: 23px;
     padding: 40px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -294,13 +283,12 @@ section {
 .accomodations-list {
     display: flex;
     flex-wrap: wrap; 
-    justify-content: space-between; 
+    gap: 23px;
 }
 
 .accomodations-item {
     height: 440px;
     width: 373px;
-    margin-bottom: 23px;
     background-color: #ffffff;
     border-radius: 15px;
 }
