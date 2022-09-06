@@ -505,37 +505,62 @@ address {
     background-position: bottom 0px right 176px;
 }
 
+.footer-legal-info, .footer-contact-info, .footer-socials {
+   display: inline-block;
+   vertical-align: top;  
+}
+
 .footer-legal-info {
     width: 320px;
-    display: inline-block;
     margin-right: 100px;
     line-height: 190%;
-
 }
 
 .footer-contact-info {
-    display: inline-block;
-    vertical-align: top;
     margin-right: 250px;
-
     line-height: 150%;
 }
 
-.footer-socials {
-    display: inline-block;
-}
+
 
 .footer-socials-link {
     display: block;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
 }
 
-.footer-socials-image:hover, .footer-socials-image:active { 
-    fill: #CC9933;
+.footer-socials-icon { 
+    width: 25px;
+    height: 25px;
+    background: #999999; 
+    transition-duration: 0.2s;
 }
 
-.footer-socials-image:focus {
-    fill: #A47312;
+.footer-socials-icon:hover, .footer-socials-icon:active { 
+    background: #cc9933;
+}
+
+.footer-socials-icon:focus {
+    background: #A47312;
+}
+
+
+
+
+
+.tripadvisor-icon {
+    -webkit-mask-image: url(../img/Component25.svg);
+    mask-image: url(../img/Component25.svg);
+}
+
+.twitter-icon {
+    -webkit-mask-image: url(../img/twitter.svg);
+    mask-image: url(../img/twitter.svg);
+}
+
+.vk-icon {
+    -webkit-mask-image: url(../img/social.svg);
+    mask-image: url(../img/social.svg);
 }
 
                                             /* fonts */
