@@ -8,6 +8,19 @@ a {
     transition-duration: 0.2s;
 }
 
+a:hover {
+    color: #E9C379;
+}
+
+a:focus{ 
+    color: #cc9933;
+    border: 1px solid #cc9933;
+}
+
+a:active {
+    color: #A47312;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -67,7 +80,6 @@ address {
     color: #ffffff;
 }
 
-
                                 /* header */
 
 .links{
@@ -83,17 +95,31 @@ address {
 .profile {
     color: #cc9933;
     margin-left: auto;
-    padding-left: 25px;
+    font-weight: 300;
+    vertical-align: middle;
+    /* padding-left: 25px;
     background-image: url(../img/keyboard_tab.svg);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left; */
 }
+
+.tab-symbol {
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+    
+}
+
 
 .profile:hover {
     color: #E9C479;
-
 }
 
+
+
+.profile:focus {
+    border: 1px solid #cc9933;
+}
 
 .nav-list {
     display: flex;
@@ -189,7 +215,7 @@ address {
 .specials-title {
     margin-top: 0px;
     margin-bottom: 15px;
-    width: 60%;
+    width: 63%;
     font-size: 40px;
     font-weight: 600;
 }
@@ -226,10 +252,10 @@ address {
 }
 
 .specials-more {
-    color: #cc9933;
+    color: #ffcc66;
     padding-right: 13px;
-    background-image: url(../img/Rectangle_2.svg);
     background-repeat: no-repeat;
+    background-image: url(../img/Rectangle_another_light.svg);
     background-position: right;
 }
 
@@ -237,6 +263,12 @@ address {
     color: #ffffff;
 }
 
+.arrow-symbol {
+    font-size: 24px;
+    font-weight: 200;
+    font-style: normal;
+    vertical-align: middle;
+}
                             /* about */
 
 .section-about {
@@ -250,9 +282,15 @@ address {
     font-size: 20px;
     line-height: 1.5em;
     padding-right: 13px;
-    background-image: url(../img/Rectangle_2.svg);
+    background-image: url(../img/Rectangle_dark.svg);
     background-repeat: no-repeat;
     background-position: right;
+    transition: 0ms;
+}
+
+.services-link:hover{
+    color: #E9C479;
+    background-image: url(../img/Rectangle_light.svg);    
 }
 
 .services-list {
@@ -269,11 +307,27 @@ address {
     padding-bottom: 50px;
     background-color: #ffffff;
     border-radius: 15px;
-    background-image: url(../img/exclusive_treatment.jpeg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 573px 165px;
 
+}
+
+.exclusive-treatment {
+   background-image: url(../img/exclusive_treatment.jpeg);
+     
+}
+
+.banket-halls {
+    background-image: url(../img/152.jpg);
+}
+
+.sauna {
+    background-image: url(../img/122.jpg);
+}
+
+.secure-parking {
+    background-image: url(../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg);
 }
 
                                 /* advantages */
@@ -382,14 +436,29 @@ address {
 }
 
 .see-all-link {
-    color: #ffffff;
+    color: #fff;
     padding-right: 13px;
     background-image: url(../img/Rectangle_2_white.svg);
     background-repeat: no-repeat;
     background-position: right;
     margin-top: auto;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: normal;
+}
+
+.see-all-link:focus {
+    background: 1px solid #fff;
+    
+}
+
+.see-all-link:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.see-all-link:active {
+    color: #fff;
+     
 }
 
                                             /* tour */
@@ -544,10 +613,6 @@ address {
     background: #A47312;
 }
 
-
-
-
-
 .tripadvisor-icon {
     -webkit-mask-image: url(../img/Component25.svg);
     mask-image: url(../img/Component25.svg);
@@ -562,6 +627,8 @@ address {
     -webkit-mask-image: url(../img/social.svg);
     mask-image: url(../img/social.svg);
 }
+
+
 
                                             /* fonts */
 @font-face {
