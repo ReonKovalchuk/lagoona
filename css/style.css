@@ -12,7 +12,7 @@ a:hover {
     color: #E9C379;
 }
 
-a:focus{ 
+a:focus {
     color: #cc9933;
     border: 1px solid #cc9933;
 }
@@ -40,11 +40,8 @@ body {
     margin-top: 30px;
     background-color: #e5e5e5;
 }
-.container {
-    max-width: 1170px;
-    margin-right: auto;
-    margin-left: auto;
-}
+
+
 
 h1 {
     margin-left: 40px;
@@ -61,6 +58,12 @@ address {
     font-style: normal;
 }
 
+.container {
+    max-width: 1170px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .btn {
     padding: 10px 13px;
     color: #cc9933;
@@ -70,19 +73,20 @@ address {
     transition-duration: 0.3s;
 }
 
-.btn:active{
+.btn:active {
     background-color: #A47312;
     color: #ffffff;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
     background-color: #cc9933;
     color: #ffffff;
 }
 
-                                /* header */
+/* header */
 
-.links{
+.links {
     display: flex;
     align-items: center;
     padding-bottom: 30px;
@@ -107,7 +111,7 @@ address {
     font-size: 20px;
     font-weight: bold;
     vertical-align: middle;
-    
+
 }
 
 
@@ -115,10 +119,12 @@ address {
     color: #E9C479;
 }
 
-
-
 .profile:focus {
     border: 1px solid #cc9933;
+}
+
+.header-cont {
+    --bs-gutter-x: unset;
 }
 
 .nav-list {
@@ -145,23 +151,27 @@ address {
 
 .nav-list:last-child {
     padding-right: 45px;
-    
+
 }
 
-.nav-link, .tel {
+.nav-link,
+.tel {
     color: #666666;
     padding: 5px;
 }
 
-.nav-link:hover, .tel:hover{
+.nav-link:hover,
+.tel:hover {
     color: #cc9933;
 }
 
-.nav-link:active,  .tel:active {
- color: #a47312;
+.nav-link:active,
+.tel:active {
+    color: #a47312;
 }
 
-.nav-link:focus,  .tel:focus{
+.nav-link:focus,
+.tel:focus {
     color: #cc9933;
     border: 1px solid #cc9933
 }
@@ -169,19 +179,16 @@ address {
 .tour {
     margin-right: 40px;
 }
+
 .buttons {
     margin-left: auto;
 }
 
-                                /* specials */
+/* specials */
 
-.specials {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.specials-item, .suites {
+.specials-item,
+.suites {
     width: 573px;
     border-radius: 15px;
     background-color: black;
@@ -189,23 +196,15 @@ address {
     padding: 40px;
 }
 
-.specials-item{
-    height: 258px;   
+.specials-item {
+    height: 258px;
     background-repeat: no-repeat;
     background-size: 573px 258px;
 }
 
-.specials-list :not(:last-child) {
-    margin-bottom: 23px;
-}
-
 .suites {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
     height: 540px;
-    padding-top: 0px;
+    /* padding-top: 0px; */
 
     background-image: url(../img/lux_suites.jpeg);
     background-size: 573px 540px;
@@ -243,12 +242,12 @@ address {
 
 .maldives {
     background-image: linear-gradient(to right, #30405984, transparent),
-                        url(../img/maldives.jpeg);
+        url(../img/maldives.jpeg);
 }
 
 .crete {
     background-image: linear-gradient(to right, #30405984, transparent),
-                        url(../img/Crete.jpeg);
+        url(../img/Crete.jpeg);
 }
 
 .specials-more {
@@ -269,13 +268,15 @@ address {
     font-style: normal;
     vertical-align: middle;
 }
-                            /* about */
+
+/* about */
 
 .section-about {
     max-width: 880px;
 }
 
-                            /* services */
+/* services */
+
 
 .services-link {
     color: #cc9933;
@@ -288,15 +289,9 @@ address {
     transition: 0ms;
 }
 
-.services-link:hover{
+.services-link:hover {
     color: #E9C479;
-    background-image: url(../img/Rectangle_light.svg);    
-}
-
-.services-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 23px;
+    background-image: url(../img/Rectangle_light.svg);
 }
 
 
@@ -304,7 +299,7 @@ address {
     min-height: 330px;
     width: 573px;
     padding: 180px 126px 50px 45px;
-    padding-bottom: 50px;
+
     background-color: #ffffff;
     border-radius: 15px;
     background-repeat: no-repeat;
@@ -313,29 +308,29 @@ address {
 
 }
 
-.exclusive-treatment {
-   background-image: url(../img/exclusive_treatment.jpeg);
-     
+#exclusive-treatment {
+    background-image: url(../img/exclusive_treatment.jpeg);
+
 }
 
-.banket-halls {
+#banket-halls {
     background-image: url(../img/152.jpg);
 }
 
-.sauna {
+#sauna {
     background-image: url(../img/122.jpg);
 }
 
-.secure-parking {
+#secure-parking {
     background-image: url(../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg);
 }
 
-                                /* advantages */
+/* advantages */
 
 .advantages-list {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    gap: 23px;
+    gap: 23px; */
 }
 
 .advantages-item {
@@ -344,7 +339,7 @@ address {
     padding: 40px;
     background-color: #ffffff;
     border-radius: 15px;
-    
+
 }
 
 .advantages-icon {
@@ -355,13 +350,6 @@ address {
     margin: 0px !important;
     line-height: 1.7em;
 
-}
-
-                                /* accomodations */
-.accomodations-list {
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 23px;
 }
 
 .accomodations-item {
@@ -388,7 +376,7 @@ address {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
 .acc-price {
@@ -400,18 +388,21 @@ address {
 }
 
 .acc-rating {
-	display: inline-block;
+    display: inline-block;
     font-size: 0;
 }
+
 .rating-star {
-	font-size: 20px;
-	color: lightgrey;
+    font-size: 20px;
+    color: lightgrey;
 }
-.acc-rating > span:before {
-	content: '★';
+
+.acc-rating>span:before {
+    content: '★';
 }
+
 .active {
-	color: #E9CE93;
+    color: #E9CE93;
 }
 
 .weak-text {
@@ -421,6 +412,7 @@ address {
 .acc-place {
     margin-top: 0px;
 }
+
 .acc-rooms {
     align-self: flex-start;
 }
@@ -448,7 +440,7 @@ address {
 
 .see-all-link:focus {
     background: 1px solid #fff;
-    
+
 }
 
 .see-all-link:hover {
@@ -458,21 +450,23 @@ address {
 
 .see-all-link:active {
     color: #fff;
-     
+
 }
 
-                                            /* tour */
+/* tour */
 .section-tour {
     padding: 38px 45px 71px 40px;
     background-color: #E9E9E9;
     border-radius: 15px;
-    
+
 }
+
 .tour-header {
     margin: 0;
 }
+
 .tour-form {
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding: 30px;
     background-color: #ffffff;
@@ -487,7 +481,7 @@ address {
     justify-content: center;
 }
 
-.tour-form :not(:first-of-type)  {
+.tour-form :not(:first-of-type) {
     border-left: 1px solid #e1e1e1;
     padding-left: 20px;
 }
@@ -507,9 +501,10 @@ address {
 }
 
 .form-item [type=number] {
-   border-bottom: 1px solid #e1e1e1; 
+    border-bottom: 1px solid #e1e1e1;
 }
-                                            /* contact-info */
+
+/* contact-info */
 
 
 .contact-info-block {
@@ -535,17 +530,19 @@ address {
     border-bottom: 1px solid #c4c4c4;
 }
 
-.contact-info-td, .contact-info-th {
+.contact-info-td,
+.contact-info-th {
     padding-top: 23px;
     padding-bottom: 23px;
     vertical-align: top;
 }
+
 .top-row {
     padding-top: 0px;
 }
 
 .contact-info-td {
-    width: 230px; 
+    width: 230px;
 }
 
 .contact-info-th {
@@ -562,7 +559,7 @@ address {
     padding: 27px 29px;
 }
 
-                                            /* footer */
+/* footer */
 .footer {
     background-color: #333333;
     color: #ffffff;
@@ -574,9 +571,11 @@ address {
     background-position: bottom 0px right 176px;
 }
 
-.footer-legal-info, .footer-contact-info, .footer-socials {
-   display: inline-block;
-   vertical-align: top;  
+.footer-legal-info,
+.footer-contact-info,
+.footer-socials {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .footer-legal-info {
@@ -595,17 +594,18 @@ address {
 .footer-socials-link {
     display: block;
     margin-bottom: 20px;
-    
+
 }
 
-.footer-socials-icon { 
+.footer-socials-icon {
     width: 25px;
     height: 25px;
-    background: #999999; 
+    background: #999999;
     transition-duration: 0.2s;
 }
 
-.footer-socials-icon:hover, .footer-socials-icon:active { 
+.footer-socials-icon:hover,
+.footer-socials-icon:active {
     background: #cc9933;
 }
 
@@ -630,12 +630,12 @@ address {
 
 
 
-                                            /* fonts */
+/* fonts */
 @font-face {
     font-style: normal;
     font-family: Muller;
     src: url(../fonts/MullerBold.woff) format("woff"),
-         url(../fonts/MullerBold.woff2) format("woff2");
+        url(../fonts/MullerBold.woff2) format("woff2");
     font-weight: 600;
 }
 
@@ -643,14 +643,15 @@ address {
     font-style: normal;
     font-family: Muller;
     src: url(../fonts/MullerLight.woff) format("woff"),
-         url(../fonts/MullerLight.woff2) format("woff2");
-    font-weight:300;
+        url(../fonts/MullerLight.woff2) format("woff2");
+    font-weight: 300;
 }
+
 @font-face {
     font-style: normal;
     font-family: Muller;
     src: url(../fonts/MullerMedium.woff) format("woff"),
-         url(../fonts/MullerMedium.woff2) format("woff2");
+        url(../fonts/MullerMedium.woff2) format("woff2");
     font-weight: 500;
 }
 
@@ -658,6 +659,6 @@ address {
     font-family: Muller;
     font-style: normal;
     src: url(../fonts/MullerRegular.woff) format("woff"),
-         url(../fonts/MullerRegular.woff2) format("woff2");
+        url(../fonts/MullerRegular.woff2) format("woff2");
     font-weight: 400;
 }
